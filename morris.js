@@ -2346,7 +2346,7 @@ Licensed under the BSD-2-Clause License.
         this.options.areaColors = this.options.lineColors;
       }
       color = Raphael.rgb2hsl(this.options.areaColors[i % this.options.areaColors.length]);
-      return '90-rgba(255, 255, 255, 0.1):0-' + color + ':100';
+      return '90-rgba(255, 255, 255, 0.1):0-' + color + ':50';
     };
 
     Area.prototype.drawFilledPath = function(path, fill, areaIndex) {

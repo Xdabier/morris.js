@@ -80,7 +80,7 @@ class Morris.Area extends Morris.Line
   fillForSeries: (i) ->
     if @options.areaColors.length == 0 then @options.areaColors = @options.lineColors
     color = Raphael.rgb2hsl @options.areaColors[i % @options.areaColors.length]
-    '90-rgba(255, 255, 255, 0.1):0-' + color + ':100'
+    '90-rgba(255, 255, 255, 0.1):0-' + color + ':50'
 
   drawFilledPath: (path, fill, areaIndex) ->
     if @options.animate
