@@ -2345,7 +2345,7 @@ Licensed under the BSD-2-Clause License.
       if (this.options.areaColors.length === 0) {
         this.options.areaColors = this.options.lineColors;
       }
-      color = this.options.areaColors[i % this.options.areaColors.length];
+      color = Raphael.rgb2hsl(this.options.areaColors[i % this.options.areaColors.length]);
       return '90-rgba(255, 255, 255, 0.1):0-' + color + ':100';
     };
 
